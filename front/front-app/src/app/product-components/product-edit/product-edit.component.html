@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-6 m-auto" id="formContainer">
+            <mat-card>
+                <mat-card-content>
+                    <h2>New product</h2>
+                    <form (ngSubmit)="edit()">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Name</mat-label>
+                            <input matInput name="name" [(ngModel)]="product.name">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Description</mat-label>
+                            <input name="description" matInput [(ngModel)]="product.description">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Color</mat-label>
+                            <input name="color" matInput [(ngModel)]="product.color">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Weight</mat-label>
+                            <input name="weight" matInput type="number" [(ngModel)]="product.weight">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Price</mat-label>
+                            <input name="price" matInput type="number" [(ngModel)]="product.price">
+                        </mat-form-field>
+                        <br>
+                        <button mat-stroked-button color="primary" type="submit">Save</button>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+            <br>
+            <button mat-mini-fab color="primary" (click)="goBack()" aria-label="Go back button">
+            <mat-icon>arrow_back</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

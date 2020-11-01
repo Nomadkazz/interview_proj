@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="mat-elevation-z6 header-toolbar">
+    <!-- logo -->
+    <!-- <span class="mat-button">
+                <img src="assets/img/TIT_logo_rus.png" class="header_logo">
+    </span> -->
+    <!-- <span>{{title}}</span> -->
+    <button mat-button [routerLink]="['/products']">
+        <mat-label><h1>{{title}}</h1></mat-label>
+    </button>
+
+    <button mat-button [routerLink]="['/products']">
+        <mat-label>Products</mat-label>
+    </button>
+    <button mat-button>
+        <mat-label>Button</mat-label>
+    </button>
+
+    <span class="toolbar-spacer"></span>
+</mat-toolbar>

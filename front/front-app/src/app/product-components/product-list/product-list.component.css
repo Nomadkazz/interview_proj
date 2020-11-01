@@ -1,0 +1,10 @@
+#products-table {
+    /* height: 400px; */
+    overflow: auto;
+    width: 100%;
+    padding: 30px;
+}
+
+table td .mat-raised-button {
+    margin-right: 10px;
+}
